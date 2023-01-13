@@ -107,15 +107,6 @@
                 $groups_count_products[$group->id]->products = count_product($group, $products)[1];
             }
 
-//            foreach ($groups_count_products as $group){
-//                echo $group->name." ".$group->count;
-//                var_dump($group->products);
-//                echo "<br><br><br>";
-//            }
-
-//            $sth = $dbh->prepare("SELECT * FROM `groups`");
-//            $sth->execute();
-//            $groups_sql = $sth->fetchAll(PDO::FETCH_OBJ);
             $groups = [];
             foreach ($groups_count_products as $group){
                 $groups[$group->id] = new stdClass();
