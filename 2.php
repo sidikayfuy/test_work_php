@@ -1,6 +1,6 @@
 <?php
 $sum = 0;
-for ($i=1; $i<=1000; $i++){
+for ($i=1; $i<=10000; $i++){
     $chars = str_split(strval($i));
     if (count($chars)>=3){
         foreach ($chars as $char){
